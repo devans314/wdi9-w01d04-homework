@@ -76,8 +76,28 @@
 // console.log(calculateSide(8, 6));
 // => 10
 
-const calculateSide = (sideA, sideB) => {
-    return(Math.sqrt((sideA * sideA) + (sideB * sideB)));
+// const calculateSide = (sideA, sideB) => {
+//     return(Math.sqrt((sideA * sideA) + (sideB * sideB)));
+// }
+// calculateSide(8,6);
+// console.log(calculateSide(8, 6));
+
+// 5. Sum Array
+// Write a function sumArray that takes an array as an argument. 
+// The array should contain numbers. 
+// The function should return the sum of the numbers in the array.
+
+// Expected result:
+
+// console.log(sumArray([1, 2, 3, 4, 5, 6]));
+// => 21
+
+const sumArray = (arr) => {
+    let sum = 0;
+    for(i = 0; i < arr.length; i++){
+        sum += arr[i];
+    }
+    console.log(sum);
 }
-calculateSide(8,6);
-console.log(calculateSide(8, 6));
+    sumArray([5, 10, 10, 5]);
+
